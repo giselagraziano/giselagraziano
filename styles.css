@@ -11,15 +11,21 @@
 body {
   font-family: var(--font-family-base);
   color: #212529;
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
 
+h1, h2 {
+  font-family: 'Baloo Bhai 2', cursive;
+  font-weight: 700; /* o 600 si querés un poco menos grueso */
+}
+
+
 /* 3. NAVBAR */
 .navbar {
-  background-color: transparent;
+  background-color: #fff;
   transition: background-color 0.3s, box-shadow 0.3s;
   padding: 15px 0;
 }
@@ -47,6 +53,38 @@ body {
 }
 
 /* 4. HERO */
+
+.hero-section {
+  background-image: url('Imagen/fondo\ amarillo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;     /* centra verticalmente */
+  justify-content: center; /* centra horizontalmente */
+  text-align: center;
+  padding: 0 20px; /* algo de espacio en móviles */
+}
+
+.hero-content {
+  color: white;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+
 .row.p-5 {
   min-height: 90vh;
   display: flex;
@@ -56,7 +94,7 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h1 {
@@ -79,12 +117,14 @@ p {
 }
 
 .btn-dark {
-  background-color: var(--primary-color);
+  background-color: white;
   border: none;
+  color: #FA8801; /* o el color que quieras */
 }
 
+
 .btn-dark:hover {
-  background-color: #369cc5;
+  background-color:#486079;
 }
 
 .btn-outline-dark {
@@ -113,8 +153,7 @@ section h2::after {
   display: block;
   width: 60px;
   height: 3px;
-  background: var(--primary-color);
-  margin: 20px auto 0;
+  margin: 5px auto 0;
 }
 
 /* 6. CARDS */
@@ -167,19 +206,115 @@ form .form-control {
 }
 
 form button.btn-primary {
-  background-color: var(--primary-color);
+  background-color: #486079;
   border: none;
   width: 100%;
   border-radius: 50px;
   margin-top: 20px;
+  color: white; /* para que el texto se vea bien */
 }
 
+
 /* 9. FOOTER */
-footer {
-  background-color: var(--dark-color);
-  color: #ffffff;
-  font-size: 0.9rem;
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  font-family: sans-serif;
+  color: #6b7280;
 }
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 140px;
+}
+
+.footer-newsletter {
+  max-width: 500px;
+  flex: 1;
+}
+
+.footer-newsletter h3 {
+  font-size: 18px;
+  color: #1f2937;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.footer-newsletter p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #6b7280;
+}
+
+.newsletter-form {
+  display: flex;
+  background: white;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  color: #333;
+}
+
+.newsletter-form button {
+  background-color: #374151;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #1f2937;
+}
+
+.footer hr {
+  margin: 30px auto;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  max-width: 1100px;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #6b7280;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #1f2937;
+}
+
 
 /* 10. IMÁGENES */
 img.rounded-circle {
@@ -187,14 +322,7 @@ img.rounded-circle {
 }
 
 /* 11. GALERÍA */
-.container .row img {
-  transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.container .row img:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-}
 
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
@@ -206,17 +334,20 @@ img.rounded-circle {
 
 /* TITULOS */
 .h1-custom {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 0.75; /* o incluso 0.95 si querés más pegado */
   color: var(--dark-color);
 }
 
+
+
 .h2-custom {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 0.5; /* más compacto */
   color: var(--dark-color);
+  margin-bottom: 0px; /* o 0 si usás línea decorativa */
 }
 
 .h3-custom {
@@ -324,3 +455,312 @@ img.rounded-circle {
     column-count: 1;
   }
 }
+
+/* ============================== */
+/* ICONOS PERSONALIZADOS */
+/* ============================== */
+
+.icono-beneficio {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* OPCIONAL: si querés que todos tengan mismo filtro de color */
+  /* filter: brightness(0) saturate(100%) invert(34%) sepia(88%) saturate(542%) hue-rotate(173deg) brightness(93%) contrast(92%); */
+}
+
+.icono-1 {
+  background-image: url('imagen/icono-1.png');
+}
+
+.icono-2 {
+  background-image: url('imagen/icono-2.png');
+}
+
+.icono-3 {
+  background-image: url('imagen/icono-3.png');
+}
+
+.icono-4 {
+  background-image: url('imagen/icono-4.png');
+}
+
+.col-md-3 {
+  max-width: 250px; /* o menos si querés que estén más cerca */
+}
+
+.section-marcaje {
+  padding: 50px 0;
+}
+
+.section-marcaje h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.section-marcaje img {
+  max-height: 100px; /* Ajusta el tamaño de los logos */
+  object-fit: contain; /* Mantiene las proporciones de los logos */
+}
+
+.section-como-funciona {
+  padding: 50px 0;
+}
+
+.subtitulo-custom {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.paso-box {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.numero-paso {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000; /* Cambiá el color si querés */
+  margin-right: 20px;
+  line-height: 1;
+  min-width: 40px;
+}
+
+.texto-paso strong {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.texto-paso p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-pequeswap {
+  padding: 40px 0;
+}
+
+.pequeswap-box {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pequeswap-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fef8f3;
+  border-radius: 20px 0 0 20px;
+}
+
+.titulo-swap {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.descripcion-swap {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 15px 0;
+}
+
+.lista-swap {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-swap li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icono-swap {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('Imagen/icono1.png'); /* Cambiá esto por tu ícono personalizado */
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.btn-swap {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: start;
+  transition: background 0.3s;
+}
+
+.btn-swap:hover {
+  background-color: #000000;
+}
+
+.pequeswap-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+.testimonios-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  text-align: center; /* para centrar título y descripción */
+}
+
+.titulo-testimonios {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.descripcion-testimonios {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* Carrusel centrado */
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding-bottom: 10px;
+
+  /* Aquí centramos las cards para que las dos del medio queden bien */
+  justify-content: center;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+
+.card {
+  flex: 0 0 450px; /* ancho fijo */
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-snap-align: start;
+}
+
+/* Resto igual (comentario, usuario, estrellas, etc.) */
+
+.comentario {
+  text-align: left;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.icono-comilla {
+  font-size: 24px;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+.card hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 15px 0;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.nombre {
+  font-weight: bold;
+  margin: 0;
+  color: #1f2937;
+}
+
+.tiempo {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 2px 0 0;
+}
+
+.estrellas {
+  text-align: right;
+  font-size: 14px;
+  min-width: 80px;
+}
+
+.rating {
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+.puntuacion {
+  color: #d1d5db;
+  font-size: 12px;
+  display: block;
+  margin-top: 2px;
+}
+
+
+
+
+
+.hero-section h1 {
+  color: white;
+}
+
+.hero-section p {
+  color: white;
+}
+
+
+
