@@ -49,13 +49,18 @@ h1, h2 {
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
+  color: #486079;
+ 
+}
+
+.btn-suscribite {
+  margin-left: 30px;
 }
 
 /* 4. HERO */
 
 .hero-section {
-  background-image: url('Imagen/fondo\ amarillo.png');
+  background-image: url('Imagen/fondo\ celeste.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,7 +69,7 @@ h1, h2 {
   align-items: center;     /* centra verticalmente */
   justify-content: center; /* centra horizontalmente */
   text-align: center;
-  padding: 0 20px; /* algo de espacio en móviles */
+   padding-top: 100px; /* espacio para el navbar fijo */
 }
 
 .hero-content {
@@ -83,7 +88,20 @@ h1, h2 {
   font-size: 1.2rem;
 }
 
+.hero-image {
+  width: 100%;
+  max-height: 90vh;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
 
+
+
+.hero-section .container,
+.hero-section .row {
+  height: 100%;
+}
 
 .row.p-5 {
   min-height: 90vh;
@@ -109,43 +127,22 @@ p {
 }
 
 /* Botones */
+
 .btn {
+  background-color: #486079;
+  color: white;
+  border: none;
   border-radius: 50px;
   padding: 10px 30px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
 
-.btn-dark {
-  background-color: white;
-  border: none;
-  color: #FA8801; /* o el color que quieras */
-}
 
-
-.btn-dark:hover {
-  background-color:#486079;
-}
-
-.btn-outline-dark {
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-}
-
-.btn-outline-dark:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-/* 5. SECCIONES */
-section {
-  padding: 100px 0;
-}
-
-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  position: relative;
+.btn:hover {
+  background-color: #95ADC7;
+  color: white;
+  ;
 }
 
 section h2::after {
@@ -156,13 +153,43 @@ section h2::after {
   margin: 5px auto 0;
 }
 
+.quienes-somos {
+  background-image: url('Imagen/trama.png'); /* Cambiá el nombre y ruta si hace falta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px; /* Podés ajustar según cómo quieras que se vea */
+  padding: 60px 0;
+  position: relative;
+}
+
+.btn-hero {
+  background-color: white;
+  color: #486079;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-hero:hover {
+  background-color: #95ADC7;
+  color: white;
+  border: 2px solid #fff;
+}
+
+
+
 /* 6. CARDS */
 .card {
   border: none;
-  border-radius: 8px;
+  border-radius: 12px; /* aumenté un poco para que combine con header e imagen */
   overflow: hidden;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
+  margin: 0;
+  padding: 0; /* 🔥 quitamos el padding para pegar el header y la imagen */
 }
 
 .card:hover {
@@ -173,6 +200,8 @@ section h2::after {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--dark-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .masonry__container {
@@ -191,6 +220,166 @@ section h2::after {
   color: #6c757d;
 }
 
+.fondo-cards {
+  background-image: url('Imagen/fondo celeste 2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.precio-numero {
+  color: #486079;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.card-header-custom {
+  background-color: #486079;
+  padding: 1rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.card-borde-grueso {
+  border: 0px solid #5E9BC8;
+}
+
+.card > p.display-6,
+.card ul {
+  padding: 0 1rem;
+  margin: 1rem 0;
+  list-style: none;
+  text-align: center;  /* centra el contenido de la lista */
+}
+
+/* ✅ Botón CTA */
+.card a.btn {
+  display: block;
+  padding: 0.75rem 1rem;
+  margin: 1rem 1rem 1.5rem 1rem;
+  width: calc(100% - 2rem);
+  border-radius: 50px;
+  text-align: center;
+}
+
+/* ✅ Íconos + texto alineados en una sola línea */
+.card ul li {
+  display: inline-flex;      /* para que el li se ajuste al contenido */
+  align-items: center;       /* alinea icono y texto verticalmente */
+  gap: 8px;                  /* espacio entre icono y texto */
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  justify-content: center;   /* centra el contenido dentro del li */
+}
+
+.card ul li img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+
+/* 7. COMO FUNCIONA */
+/* Fondo de la sección */
+.section-como-funciona {
+  background-image: url('Imagen/trama.png'); /* ajustá la ruta si hace falta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilo general de los contenedores de paso */
+/* Estilo general de los contenedores de paso */
+.paso-box {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  color: white; /* texto blanco para contraste */
+  
+  max-width: 80%;    /* Limita ancho máximo al 70% del contenedor */
+  margin-left: auto; /* Centra horizontalmente */
+  margin-right: auto;
+  margin-bottom: 1.5rem; /* espacio abajo entre cajas */
+}
+
+/* Colores diferentes para cada paso */
+.paso-box.paso-1 {
+  background-color: #5E7289;
+}
+
+.paso-box.paso-2 {
+  background-color: #799ABC;
+}
+
+.paso-box.paso-3 {
+  background-color: #95ADC7;
+}
+
+/* Forzar texto blanco en los hijos */
+.paso-box strong,
+.paso-box p,
+.paso-box .texto-paso {
+  color: white !important;
+}
+
+.numero-paso {
+  color: white !important;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 20px;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2); /* opcional para que resalte */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  flex-shrink: 0; /* que no se achique */
+}
+
+
+/* Textos */
+.texto-paso p {
+  margin: 0;
+}
+
+/* Colores distintos para cada paso */
+.paso-1 {
+  background-color: #5E7289; /* rosa claro */
+}
+
+.paso-2 {
+  background-color: #5E9BC8; /* verde agua */
+}
+
+.paso-3 {
+  background-color: #95ADC7; /* amarillo suave */
+}
+
+
 /* 7. TESTIMONIOS */
 .blockquote {
   background-color: var(--light-color);
@@ -201,8 +390,16 @@ section h2::after {
 
 /* 8. FORMULARIO */
 form .form-control {
+  background-color: #F0F4F7;
+  color: #9F9F9F;
   border-radius: 8px;
-  border: 1px solid #ced4da;
+  border: 0;
+}
+
+form .form-control::placeholder {
+  font-size: 14px;
+  color: #9F9F9F;
+  opacity: 1; /* para que el color se vea igual en todos los navegadores */
 }
 
 form button.btn-primary {
@@ -214,6 +411,15 @@ form button.btn-primary {
   color: white; /* para que el texto se vea bien */
 }
 
+.contacto-seccion {
+  background-image: url('Imagen/trama.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px; /* podés ajustar el espaciado */
+  color: white; /* si tu imagen es oscura, esto ayuda a que el texto se lea */
+}
+
 
 /* 9. FOOTER */
 .footer {
@@ -223,22 +429,40 @@ form button.btn-primary {
   color: #6b7280;
 }
 
+/* ORGANIZACIÓN EN DOS COLUMNAS */
 .footer-top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
   max-width: 1100px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
+/* NUEVA CLASE para columnas generales */
+.footer-col {
+  flex: 1 1 300px; /* se adapta pero tiene mínimo */
+}
+
+/* COLUMNA DEL LOGO + ICONOS */
+.footer-logo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Logo */
 .footer-logo img {
   max-width: 140px;
+  margin-bottom: 10px;
 }
 
+/* Newsletter (segunda columna) */
 .footer-newsletter {
-  max-width: 500px;
+  max-width: 400px;
   flex: 1;
 }
 
@@ -297,7 +521,11 @@ form button.btn-primary {
   text-align: center;
   color: #9ca3af;
   font-size: 14px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb; /* línea gris claro */
+  margin-top: 20px;
 }
+
 
 .social-icons {
   margin-bottom: 10px;
@@ -314,6 +542,26 @@ form button.btn-primary {
 .social-icons a:hover {
   color: #1f2937;
 }
+
+/* Iconos debajo del logo */
+.social-icons-logo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons-logo a {
+  color: #486079;
+  font-size: 24px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons-logo a:hover {
+  color: #2c4a63;
+}
+
 
 
 /* 10. IMÁGENES */
@@ -343,7 +591,7 @@ img.rounded-circle {
 
 
 .h2-custom {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 0.5; /* más compacto */
   color: var(--dark-color);
@@ -415,8 +663,8 @@ img.rounded-circle {
 
 /* ESPACIADOS */
 .section-spacing {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .section-spacing-sm {
@@ -456,6 +704,11 @@ img.rounded-circle {
   }
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 200px !important;
+  }
+}
 /* ============================== */
 /* ICONOS PERSONALIZADOS */
 /* ============================== */
@@ -464,12 +717,14 @@ img.rounded-circle {
   display: inline-block;
   width: 100px;
   height: 100px;
+  margin-bottom: 10px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   /* OPCIONAL: si querés que todos tengan mismo filtro de color */
   /* filter: brightness(0) saturate(100%) invert(34%) sepia(88%) saturate(542%) hue-rotate(173deg) brightness(93%) contrast(92%); */
 }
+
 
 .icono-1 {
   background-image: url('imagen/icono-1.png');
@@ -552,14 +807,19 @@ img.rounded-circle {
 }
 
 .section-pequeswap {
-  padding: 40px 0;
+  background-image: url('Imagen/trama.png'); /* tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
 }
+
 
 .pequeswap-box {
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(198, 90, 90, 0.1);
   display: flex;
   flex-wrap: wrap;
 }
@@ -568,14 +828,17 @@ img.rounded-circle {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fef8f3;
+  background-color: #fff;
   border-radius: 20px 0 0 20px;
+   padding: 10px 10px 10px 110px; /* arriba, derecha, abajo, izquierda */
 }
 
 .titulo-swap {
-  font-size: 2rem;
+font-family: 'Baloo Bhai 2', cursive; 
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #000000;
+  line-height: 1.2;
+  color: #3C536B;
 }
 
 .descripcion-swap {
@@ -607,11 +870,12 @@ img.rounded-circle {
 }
 
 .btn-swap {
-  background-color: #000000;
+  background-color: #486079;
   color: white;
   border: none;
-  padding: 10px 25px;
-  border-radius: 8px;
+  width: 250px; /* o el ancho que quieras */
+  padding: 0.75rem 1rem; /* ajustá el padding interno si querés */
+  border-radius: 100px;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
@@ -620,7 +884,8 @@ img.rounded-circle {
 }
 
 .btn-swap:hover {
-  background-color: #000000;
+  background-color: #95ADC7;
+  color: white;
 }
 
 .pequeswap-img img {
@@ -630,94 +895,202 @@ img.rounded-circle {
 }
 
 
+.img-experto {
+  width: 300px;
+  height: auto;
+  
+}
+
+
+
 
 
 .testimonios-section {
-  max-width: 1000px;
+  width: 100vw;
   margin: 0 auto;
-  padding: 30px 10px;
-  text-align: center; /* para centrar título y descripción */
+  padding: 100px 20px;
+  text-align: center;
+
+  background-image: url('Imagen/fondo celeste 2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  box-sizing: border-box;
 }
 
 .titulo-testimonios {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #1f2937;
+  color: white;
   font-weight: 700;
 }
 
 .descripcion-testimonios {
   font-size: 1.2rem;
-  color: #6b7280;
+  color: white;
   margin-bottom: 30px;
 }
 
-/* Carrusel centrado */
+/* Carrusel horizontal en mobile */
 .carrusel {
   display: flex;
+  gap: 20px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 20px;
-  padding-bottom: 10px;
-
-  /* Aquí centramos las cards para que las dos del medio queden bien */
-  justify-content: center;
-  scrollbar-width: none; /* Firefox */
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 0;
+  scrollbar-width: none;
+  scroll-padding-left: 7.5%;
+  justify-content: flex-start;
 }
 
 .carrusel::-webkit-scrollbar {
-  display: none; /* Chrome, Safari y Opera */
+  display: none;
 }
 
 .card {
-  flex: 0 0 450px; /* ancho fijo */
+  flex: 0 0 85%;
+  max-width: 450px;
   background: white;
   border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 24px 24px 24px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  scroll-snap-align: start;
+  justify-content: flex-start;
+  gap: 16px;
+  scroll-snap-align: center;
+  color: #333;
 }
 
-/* Resto igual (comentario, usuario, estrellas, etc.) */
+.card2 {
+  flex: 0 0 85%;
+  max-width: 450px;
+  background: white;
+  border-radius: 12px;
+  /* 🔥 Eliminar padding para que imagen + título estén bien pegados */
+  padding: 0;
 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0px;
+  scroll-snap-align: center;
+  color: #333;
+}
+
+/* Estilo para el título y la imagen */
+.card2 .card-header-custom,
+.card2 img {
+  padding: 0;    /* Elimina padding */
+  margin: 0;     /* Elimina márgenes */
+}
+
+/* Estilo para el título específicamente */
+.card2 .card-header-custom {
+  margin-bottom: 0; /* Elimina el espacio debajo del título */
+  padding-bottom: 0; /* Elimina el padding en la parte inferior del título */
+  padding: 1rem 0; /* antes era 1rem */
+}
+
+/* Estilo para las imágenes dentro de la tarjeta */
+.card2 img {
+  width: auto; /* Desactiva la propiedad w-100 */
+  max-width: 100%;  /* Deja que las imágenes mantengan el tamaño adecuado */
+  height: auto;     /* Mantiene la proporción de las imágenes */
+  margin-bottom: 0px; /* Da un pequeño espacio entre la imagen y el resto del contenido */
+}
+
+/* Ajustes para el cuerpo de la tarjeta */
+.card2 .card-body {
+  padding: 0px; /* Ajusta el padding en el contenido del cuerpo */
+}
+
+/* Ajustes en el texto dentro del cuerpo */
+.card2 h2, .card2 p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ajustes para las imágenes dentro de la lista */
+.card2 .card-body img {
+  max-width: 20px;  /* Ajusta el tamaño máximo del icono */
+  height: auto;     /* Mantiene la proporción de la imagen */
+  margin-right: 8px; /* Espaciado entre los iconos y el texto */
+}
+
+
+
+/* Centrar el segundo card inicialmente en mobile */
+@media (max-width: 767px) {
+  .card:nth-child(2) {
+    scroll-margin-left: 7.5%;
+  }
+}
+
+/* En pantallas grandes, mostrar las 3 cards fijas */
+@media (min-width: 768px) {
+  .card {
+    flex: 0 0 30%;
+  }
+
+  .carrusel {
+    justify-content: center;
+    overflow-x: visible;
+  }
+}
+
+/* Comentario dentro de la card */
 .comentario {
+  margin: 0;
+  padding: 0;
   text-align: left;
   color: #333;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.5;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .icono-comilla {
-  font-size: 24px;
-  color: #9ca3af;
-  margin-bottom: 8px;
+  font-family: 'Baloo Bhai 2';
+  font-size: 50px;
+  color: #95ADC7;
+  margin-bottom: 0;
 }
 
+/* Línea divisoria */
 .card hr {
   border: none;
-  border-top: 1px solid #e5e7eb;
-  margin: 15px 0;
+  border-top: 1px solid #dcdcdc;
+  margin: 0;
 }
 
+/* Sección usuario con avatar, info y estrellas */
 .usuario {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
+  margin-top: 15px;
 }
 
+/* Avatar pequeño y redondeado */
 .avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
+  width: 48px !important;
+  height: 48px !important;
   object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
+/* Info del usuario */
 .info {
   flex-grow: 1;
+  padding-left: 12px;
+  text-align: left;
 }
 
 .nombre {
@@ -732,14 +1105,17 @@ img.rounded-circle {
   margin: 2px 0 0;
 }
 
+/* Estrellas alineadas a la derecha */
 .estrellas {
-  text-align: right;
-  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   min-width: 80px;
+  font-size: 14px;
 }
 
 .rating {
-  color: #3b82f6;
+  color: #486079;
   font-weight: bold;
 }
 
@@ -751,9 +1127,6 @@ img.rounded-circle {
 }
 
 
-
-
-
 .hero-section h1 {
   color: white;
 }
@@ -763,4 +1136,114 @@ img.rounded-circle {
 }
 
 
+
+.fondo-cards h2.h2-custom {
+  color: white;
+}
+
+.fondo-cards p.p-custom {
+  color: white;
+}
+
+
+.form-box {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* pagina detalle */
+.precio-grande {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fdfdfd; /* o el color que quieras */
+  display: block; /* para que quede en línea aparte */
+  margin-top: 10px;
+}
+
+.quienes-somos-detalle {
+  background-image: url('Imagen/fondo\ rosa.png'); /* ← Cambiá esto por tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.quienes-somos-detalle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.quienes-somos-detalle .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* --- FAQ SECTION --- */
+.faq-section {
+  margin: 40px 0; /* margen arriba y abajo */
+  min-height: 300px; /* opcional */
+}
+
+.faq-section .container {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 40px !important; /* margen izquierdo */
+  padding-right: 20px !important; /* margen derecho */
+}
+
+.faq-content, .faq-image {
+  flex: 1;
+  overflow: visible;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.faq-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.faq-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.kits-section {
+  margin: 40px 0;
+}
+
+.kits-section .container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px; /* pequeño padding a la izquierda */
+  padding-right: 40px; /* padding derecho igual para balancear */
+  text-align: center;
+}
+
+
+.kits-section h2,
+.kits-section p {
+  margin-bottom: 20px;
+}
+
+.kits-section .row > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.kits-section .img-experto {
+  max-width: 250px; /* imagenes más grandes */
+  margin-bottom: 15px;
+}
 

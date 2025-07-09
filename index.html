@@ -9,6 +9,8 @@
     <!-- Tipografía desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+
 
 
     <!-- Framework CSS de Bootstrap -->
@@ -19,6 +21,11 @@
 
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
 </head>
 <body>
 
@@ -41,16 +48,18 @@
         <li class="nav-item"><a class="nav-link" href="#">Nuestros Kits</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Pequeswap</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Testimonios</a></li>
-        <a href="#" class="btn btn-dark">Suscribite</a>
+        <a href="#suscribite" class="btn btn-primary btn-suscribite">Suscribite</a>
+
       </ul>
     </div>
   </div>
 </nav>
 <!-- /NAVBAR -->
 
-<section class="section-spacing container-fluid hero-section" style="min-height: 100vh; padding-top: 100px;">
-  <div class="container">
-    <div class="row align-items-center">
+<section class="hero-section container-fluid">
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+
       <!-- Texto principal -->
       <div class="col-lg-6">
         <h1 class="h1-custom">
@@ -60,13 +69,17 @@
         <p class="p-custom">Kits para jugar, aprender y compartir. <br>
         Sin pantallas, para estimular la imaginación.</p>
         <div class="text-center mt-4">
-          <a href="#" class="btn btn-dark">Suscribite</a>
+     <a href="#" class="btn btn-hero">Suscribite</a>
+
+
         </div>
       </div>
       <!-- Imagen destacada -->
-      <div class="col-lg-6 text-center">
-        <img src="Imagen/image hero.png" class="img-fluid img-rounded" alt="Imagen Hero">
-      </div>
+      <div class="col-lg-6 d-flex align-items-center justify-content-center">
+  <img src="Imagen/image hero.png" class="img-fluid img-rounded hero-image" alt="Imagen Hero">
+</div>
+
+
     </div>
   </div>
 </section>
@@ -77,179 +90,203 @@
 <!-- ABOUT: Sección sobre nosotros -->
 <!-- ABOUT: Sección sobre nosotros -->
 <section class="section-spacing container text-center">
+  <br>
   <h2 class="h2-custom">BENEFICIOS</h2>
   <p class="mb-2">Lo que hace que Pequeplan no sea una caja más</p>
   <br>
-  <div class="row g-0">
-    <!-- Beneficio 1 -->
-    <div class="col-md-3 mb-4">
-      <i class="icono-beneficio icono-1"></i>
-      <h5>Sin pantallas</h5>
-      <p class="p-custom">Incentiva la creatividad</p>
-    </div>
+  <div class="row justify-content-center">
 
-    <!-- Beneficio 2 -->
-    <div class="col-md-3 mb-4">
-      <i class="icono-beneficio icono-2"></i>
+    <!-- Beneficio 1 -->
+    <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-column align-items-center">
+      <i class="icono-beneficio icono-2 mb-2"></i>
       <h5>Tiempo en familia</h5>
       <p class="p-custom">Aumenta la conexión real</p>
     </div>
 
-    <!-- Beneficio 3 -->
-    <div class="col-md-3 mb-4">
-      <i class="icono-beneficio icono-3"></i>
+    <!-- Beneficio 2 -->
+    <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-column align-items-center">
+      <i class="icono-beneficio icono-3 mb-2"></i>
       <h5>Listos para usar</h5>
       <p class="p-custom">Todos los materiales</p>
     </div>
 
-    <!-- Beneficio 4 -->
-    <div class="col-md-3 mb-4">
-      <i class="icono-beneficio icono-4"></i>
+    <!-- Beneficio 3 -->
+    <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-column align-items-center">
+      <i class="icono-beneficio icono-4 mb-2"></i>
       <h5>Aprende jugando</h5>
       <p class="p-custom">Estimula habilidades</p>
     </div>
+
+    <!-- Beneficio 4 -->
+    <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-column align-items-center">
+      <i class="icono-beneficio icono-1 mb-2"></i>
+      <h5>Sin pantallas</h5>
+      <p class="p-custom">Incentiva la creatividad</p>
+    </div>
+
   </div>
 </section>
+
+
+
 
 <!-- /ABOUT -->
 <!-- SECCIÓN C: Texto izquierda, imagen derecha -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Columna de texto -->
-    <div class="col-lg-6">
-      <h2 class="h2-custom">QUIENES SOMOS</h2>
-      <br>
-      <p class="lead-custom">Creamos Pequeplan con un objetivo: que jugar y aprender en casa sea fácil, accesible y sin pantallas. Sabemos lo que cuesta encontrar tiempo de calidad con nuestrxs hijxs, por eso diseñamos kits con actividades que despiertan la curiosidad y fortalecen el vínculo en familia.</p>
-      <a href="#" class="btn btn-primary mt-3">Conocé más</a>
-    </div>
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mt-4 mt-lg-0">
-      <img src="Imagen/quienes somos.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+<section class="quienes-somos section-spacing text-white text-center d-flex align-items-center">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <!-- Texto -->
+      <div class="col-lg-6">
+        <h2 class="h2-custom">QUIÉNES SOMOS</h2>
+        <br>
+        <p class="lead-custom texto-limitado">
+          Creamos Pequeplan con un objetivo claro: que jugar y aprender en casa sea fácil, accesible y sin pantallas. Por eso diseñamos kits con actividades creativas que despiertan la curiosidad y fortalecen el vínculo en familia.
+        </p>
+        <a href="#" class="btn btn-primary mt-3">Conocé más</a>
+      </div>
+
+      <!-- Imagen -->
+      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+        <img src="Imagen/quienes somos.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">ELEGI TU PLAN</h2>
-  <p class="p-custom">Un nuevo desafío llega a tu puerta cada 15 días</p>
-  
-  <div class="row mt-5">
-    
-    <!-- Card: Plan Básico -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Cocineros</h5>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Básico">
-       <p class="display-6 text-primary">$23.000 ARS <small>/ mes</small></p>
-        <!-- Descripción -->
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li><img src="Imagen/icono1.png" alt="" style="width:20px; vertical-align: middle; margin-right: 8px;"> Aprenden sin pantallas</li>
-       <li><img src="Imagen/icono1.png" alt="" style="width:20px; vertical-align: middle; margin-right: 8px;"> Incluye guía paso a paso</li>
-       <li><img src="Imagen/icono3.png" alt="" style="width:20px; vertical-align: middle; margin-right: 8px;"> Acceso a videos exclusivos</li>
+<section class="section-spacing text-center fondo-cards">
+  <div class="container">
+    <br>
+    <h2 class="h2-custom">ELEGI TU PLAN</h2>
+    <p class="p-custom">Un nuevo desafío llega a tu puerta cada 15 días</p>
 
-        </ul>
+    <div class="row mt-5">
 
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
+      <!-- Card: Plan Básico -->
+      <div class="col-md-4 mb-4">
+        <div class="card2 h-100">
+          <!-- Franja azul con título -->
+          <div class="card-header-custom text-white text-center">
+            Plan Cocineros
+          </div>
+
+          <!-- Imagen ilustrativa -->
+          <img src="Imagen/caja rosa.png" class="img-fluid w-100" alt="Plan Básico">
+          
+          <!-- Contenido con padding separado -->
+          <div class="card-body p-4">
+            <!-- Precio -->
+            <p class="display-6 text-primary">
+              <span class="precio-numero">$23.000 ARS / mes </span> 
+            </p>
+
+            <!-- Lista de beneficios -->
+            <ul class="list-unstyled text-center mx-auto">
+              <li><img src="Imagen/icono1.png" alt=""> Aprenden sin pantallas</li>
+              <li><img src="Imagen/icono1.png" alt=""> Incluye guía paso a paso</li>
+              <li><img src="Imagen/icono3.png" alt=""> Acceso a videos exclusivos</li>
+            </ul>
+
+            <!-- Botón CTA -->
+            <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Card: Plan Pro (Recomendado) -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100 border border-primary">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Jardineritos <span class="badge bg-primary ms-2">Recomendado</span></h5>
-       
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Pro">
- <p class="display-6 text-primary">$25.000 ARS <small>/ mes</small></p>
-        <!-- Descripción -->
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-         <li><img src="Imagen/icono1.png" alt="" style="width:20px; vertical-align: middle; margin-right: 8px;"> Aprenden sin pantallas</li>
-       <li><img src="Imagen/icono1.png" alt="" style="width:20px; vertical-align: middle; margin-right: 8px;"> Incluye guía paso a paso</li>
-       <li><img src="Imagen/icono1.png" alt="" style="width:20px; vertical-align: middle; margin-right: 8px;"> Acceso a videos exclusivos</li>
+      <!-- Card: Plan Pro (Recomendado) -->
+      <div class="col-md-4 mb-4">
+        <div class="card2 h-100 card-borde-grueso">
+          <div class="card-header-custom text-white text-center">
+            Plan Jardineritos <span class="badge bg-primary ms-2"></span>
+          </div>
 
-        </ul>
+          <img src="Imagen/caja colores.png" class="img-fluid w-100" alt="Plan Pro">
 
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
+          <div class="card-body p-4">
+            <p class="display-6 text-primary">
+              <span class="precio-numero">$25.000 ARS / mes </span> 
+            </p>
+
+            <ul class="list-unstyled text-center mx-auto">
+              <li><img src="Imagen/icono1.png" alt=""> Aprenden sin pantallas</li>
+              <li><img src="Imagen/icono1.png" alt=""> Incluye guía paso a paso</li>
+              <li><img src="Imagen/icono1.png" alt=""> Acceso a videos exclusivos</li>
+            </ul>
+
+            <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Card: Plan Full -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Manualidades</h5>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Full">
-        <p class="display-6 text-primary">$20.000 ARS <small>/ mes</small></p>
+      <!-- Card: Plan Full -->
+      <div class="col-md-4 mb-4">
+        <div class="card2 h-100">
+          <div class="card-header-custom text-white text-center">
+            Plan Manualidades
+          </div>
 
-        <!-- Descripción -->
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-        
-       <li><img src="Imagen/icono1.png" alt="" style="width:20px; vertical-align: middle; margin-right: 8px;"> Aprenden sin pantallas</li>
-       <li><img src="Imagen/icono1.png" alt="" style="width:20px; vertical-align: middle; margin-right: 8px;"> Incluye guía paso a paso</li>
-       <li><img src="Imagen/icono3.png" alt="" style="width:20px; vertical-align: middle; margin-right: 8px;"> Acceso a videos exclusivos</li>
+          <img src="Imagen/caja celeste.png" class="img-fluid w-100" alt="Plan Full">
 
+          <div class="card-body p-4">
+            <p class="display-6 text-primary">
+              <span class="precio-numero">$20.000 ARS / mes </span> 
+            </p>
 
-        </ul>
+            <ul class="list-unstyled text-center mx-auto">
+              <li><img src="Imagen/icono1.png" alt=""> Aprenden sin pantallas</li>
+              <li><img src="Imagen/icono1.png" alt=""> Incluye guía paso a paso</li>
+              <li><img src="Imagen/icono3.png" alt=""> Acceso a videos exclusivos</li>
+            </ul>
 
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
+            <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
+          </div>
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
+
+
 <!-- /PLANES DE SUSCRIPCIÓN -->
 
 <!-- SECCIÓN ¿CÓMO FUNCIONA PEQUEPLAN? -->
-<section class="section-como-funciona container my-5">
-  <h2 class="h2-custom text-center">¿Cómo funciona PequePlan?</h2>
-  <p class="subtitulo-custom text-center">En 3 simples pasos, tu familia empieza a jugar sin pantallas.</p>
+<section class="section-como-funciona py-5"> <!-- Fondo aplicado acá -->
+  <div class="container"> <!-- Contenido centrado -->
+    <h2 class="h2-custom text-center">COMO FUNCIONA</h2>
+    <p class="subtitulo-custom text-center">En 3 simples pasos. A jugar sin pantallas!</p>
 
-  <div class="row align-items-center mt-5">
-    <!-- Columna izquierda con los pasos -->
-    <div class="col-lg-6">
-      <div class="paso-box">
-        <div class="numero-paso">1</div>
-        <div class="texto-paso">
-          <strong>Elegí tu plan favorito</strong>
-          <p>Vos decidís qué experiencia vivir.</p>
+    <div class="row align-items-center mt-5">
+      <!-- Columna izquierda con los pasos -->
+      <div class="col-lg-6">
+        <div class="paso-box paso-1 mb-4">
+          <div class="numero-paso">1</div>
+          <div class="texto-paso">
+            <strong>Elegí tu plan favorito</strong>
+            <p>Vos decidís qué experiencia divertida vivir.</p>
+          </div>
+        </div>
+        <div class="paso-box paso-2 mb-4">
+          <div class="numero-paso">2</div>
+          <div class="texto-paso">
+            <strong>¡Recibí la caja en casa!</strong>
+            <p>Recibí cada 15 días un nuevo kit sorpresa.</p>
+          </div>
+        </div>
+        <div class="paso-box paso-3 mb-4">
+          <div class="numero-paso">3</div>
+          <div class="texto-paso">
+            <strong>Jugá, aprendé y creá</strong>
+            <p>Disfruta tiempo divertido lejos de las pantallas.</p>
+          </div>
         </div>
       </div>
-      <div class="paso-box">
-        <div class="numero-paso">2</div>
-        <div class="texto-paso">
-          <strong>¡Recibí la caja en casa!</strong>
-          <p>Recibí cada 15 días un kit sorpresa.</p>
-        </div>
-      </div>
-      <div class="paso-box">
-        <div class="numero-paso">3</div>
-        <div class="texto-paso">
-          <strong>Jugá, aprendé y creá</strong>
-          <p>Tiempo lejos de las pantallas.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Columna derecha con imagen -->
-    <div class="col-lg-6 text-center">
-      <img src="Imagen/nena maceta.png" class="img-fluid" alt="Cómo funciona PequePlan">
+      <!-- Columna derecha con imagen -->
+      <div class="col-lg-6 text-center">
+        <img src="Imagen/nena maceta.png" class="img-fluid" alt="Cómo funciona PequePlan">
+      </div>
     </div>
   </div>
 </section>
@@ -257,7 +294,7 @@
 
 <!-- SECCIÓN MARCAS -->
 <section class="section-marcaje container text-center my-5">
-  <h2 class="h2-custom">MARCAS QUE NOS ACOMPAÑAN</h2>
+  <h2 class="h2-custom">MARCAS AMIGAS</h2>
   <div class="row justify-content-center mt-4">
     <div class="col-2">
       <img src="Imagen/MARCA1.png" alt="Marca 1" class="img-fluid">
@@ -279,33 +316,36 @@
 <!-- /SECCIÓN MARCAS -->
 
 <!-- SECCIÓN PEQUESWAP -->
-<section class="section-pequeswap container my-5">
-  <div class="pequeswap-box d-flex flex-wrap">
-    
-    <!-- Texto -->
-    <div class="pequeswap-text col-lg-6 p-4">
-      <h3 class="titulo-swap">PequeSwap</h3>
-      <p class="descripcion-swap">
-        Canjeá tus kits ya usados en espacios <br>
-        de la comunidad por nuevas experiencias.
-      </p>
+<section class="section-pequeswap my-5"> <!-- Solo fondo y espaciado -->
+  <div class="container"> <!-- Acá mantenemos el contenido centrado -->
+    <div class="pequeswap-box d-flex flex-wrap">
       
-      <ul class="lista-swap">
-        <li><i class="icono-swap"></i>10% de descuento exclusivo en jugueterías.</li>
-        <li><i class="icono-swap"></i>Seleccionar uno distinto al que ya jugaste.</li>
-        <li><i class="icono-swap"></i>Pagás menos por un nuevo kit.</li>
-      </ul>
-      
-      <button class="btn-swap mt-3">Canjear</button>
-    </div>
+      <!-- Texto -->
+      <div class="pequeswap-text col-lg-6">  <!-- SACAMOS p-4 de acá -->
+        <h3 class="titulo-swap">PEQUESWAP</h3>
+        <p class="descripcion-swap">
+          Canjeá tus kits ya usados en espacios <br>
+          de la comunidad por nuevas experiencias.
+        </p>
+        
+        <ul class="lista-swap">
+          <li><i class="icono-swap"></i>10% de descuento exclusivo en jugueterías.</li>
+          <li><i class="icono-swap"></i>Seleccionar uno distinto al que ya jugaste.</li>
+          <li><i class="icono-swap"></i>Pagás menos por un nuevo kit.</li>
+        </ul>
+        
+        <button class="btn-swap mt-3">Canjear</button>
+      </div>
 
-    <!-- Imagen -->
-    <div class="pequeswap-img col-lg-6 p-0">
-      <img src="Imagen/caja cambio.png" class="img-fluid rounded-end" alt="PequeSwap">
+      <!-- Imagen -->
+      <div class="pequeswap-img col-lg-6 p-0">
+        <img src="Imagen/caja cambio.png" class="img-fluid rounded-end" alt="PequeSwap">
+      </div>
+
     </div>
-    
   </div>
 </section>
+
 
 
 <!-- TEAM: Presentación del equipo -->
@@ -313,45 +353,51 @@
   <h2 class="h2-custom">NUESTROS EXPERTOS</h2>
   <p class="p-custom">Ellos prueban, juegan y aprenden primero.</p>
   <div class="row mt-5">
-    <!-- Cada columna es un integrante -->
+    
+    <!-- Miembro 1 -->
     <div class="col-md-4 mb-4">
-      <img src="Imagen/expertos1.png" class="rounded-circle mb-3" alt="Miembro 1">
-      <h5>SIMON  NUESTRA CHEF</h5>
+      <img src="Imagen/expertos1.png" class="mb-3 img-fluid img-experto" alt="Miembro 1">
+      <h5>SIMON NUESTRA CHEF</h5>
       <p class="p-custom">Ama las cookies rellenas y decorarlas.</p>
     </div>
-    <!-- Cada columna es un integrante -->
+
+    <!-- Miembro 2 -->
     <div class="col-md-4 mb-4">
-      <img src="Imagen/expertos2.png" class="rounded-circle mb-3" alt="Miembro 1">
+      <img src="Imagen/expertos2.png" class="mb-3 img-fluid img-experto" alt="Miembro 2">
       <h5>EMMA NUESTRA JARDINERA</h5>
       <p class="p-custom">Siempre con las manos en la tierra.</p>
     </div>
-    <!-- Cada columna es un integrante -->
+
+    <!-- Miembro 3 -->
     <div class="col-md-4 mb-4">
-      <img src="Imagen/expertos3.png" class="rounded-circle mb-3" alt="Miembro 1">
-      <h5>LULI NUESTRA CIENTIFICA</h5>
+      <img src="Imagen/expertos3.png" class="mb-3 img-fluid img-experto" alt="Miembro 3">
+      <h5>LULI NUESTRA CIENTÍFICA</h5>
       <p class="p-custom">Apasionada por las burbujas y las sorpresas.</p>
     </div>
+    
   </div>
 </section>
+
+
 <!-- /TEAM -->
 
 <!-- /TESTIMONIOS -->
 <section class="testimonios-section">
-  <h2 class="titulo-testimonios">Testimonios</h2>
+  <h2 class="titulo-testimonios">TESTIMONIOS</h2>
   <p class="descripcion-testimonios">Así viven otras familias la experiencia Pequeplan</p>
 
   <div class="carrusel">
     <div class="card">
       <div class="comentario">
         <div class="icono-comilla">“</div>
-        <p>Mi hija espera con emoción cada caja. La cocina fue su favorita: hicimos galletitas y después jugó a ser chef toda la semana. ¡Es más que una actividad, es un momento juntas!</p>
+        <p>Al principio pensé que era solo para entretener, pero me sorprendió lo educativos que son los kits. Con el de ciencia, mi hija me explicó cómo funciona un volcán. ¡Increíble!</p>
       </div>
       <hr />
       <div class="usuario">
-        <img src="https://i.pravatar.cc/100?img=32" alt="Mariana Lopez" class="avatar" />
+        <img src="Imagen/testimonio2.png" alt="Mariana Lopez" class="avatar" />
         <div class="info">
-          <p class="nombre">Mariana Lopez</p>
-          <p class="tiempo">6 meses con Pequeplan</p>
+          <p class="nombre">Pablo Torres</p>
+          <p class="tiempo">3 meses con Pequeplan</p>
         </div>
         <div class="estrellas">
           <span class="rating">★★★★★</span>
@@ -363,11 +409,11 @@
     <div class="card">
       <div class="comentario">
         <div class="icono-comilla">“</div>
-        <p>Me encanta la variedad de actividades. Cada mes es una sorpresa y nos mantiene a mis hijos entretenidos y aprendiendo cosas nuevas. Totalmente recomendable.</p>
+        <p>Me encanta la variedad de actividades. Cada mes es una sorpresa y nos mantiene a mis hijos entretenidos y aprendiendo cosas nuevas. Super recomendable.</p>
       </div>
       <hr />
       <div class="usuario">
-        <img src="https://i.pravatar.cc/100?img=12" alt="Lucas Gómez" class="avatar" />
+        <img src="Imagen/testimonio3.png" alt="Lucas Gómez" class="avatar" />
         <div class="info">
           <p class="nombre">Lucas Gómez</p>
           <p class="tiempo">3 meses con Pequeplan</p>
@@ -382,11 +428,11 @@
     <div class="card">
       <div class="comentario">
         <div class="icono-comilla">“</div>
-        <p>Excelente calidad y presentación. A mis niños les encantó armar los kits y hacer las actividades. Además, la atención al cliente fue impecable.</p>
+        <p>Mi hija espera con emoción cada caja. La cocina fue su favorita: hicimos galletitas y después jugó a ser chef toda la semana. ¡Es más que una actividad, es un momento juntas!</p>
       </div>
       <hr />
       <div class="usuario">
-        <img src="https://i.pravatar.cc/100?img=45" alt="Andrea Fernández" class="avatar" />
+        <img src="Imagen/testimonios1.png" alt="Andrea Fernández" class="avatar" />
         <div class="info">
           <p class="nombre">Andrea Fernández</p>
           <p class="tiempo">1 año con Pequeplan</p>
@@ -398,25 +444,6 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="comentario">
-        <div class="icono-comilla">“</div>
-        <p>Muy buena experiencia. Me gusta que mis hijos tengan actividades creativas y educativas. Nos ayuda a pasar tiempo de calidad en familia.</p>
-      </div>
-      <hr />
-      <div class="usuario">
-        <img src="https://i.pravatar.cc/100?img=66" alt="Sofía Martínez" class="avatar" />
-        <div class="info">
-          <p class="nombre">Sofía Martínez</p>
-          <p class="tiempo">8 meses con Pequeplan</p>
-        </div>
-        <div class="estrellas">
-          <span class="rating">★★★★☆</span>
-          <span class="puntuacion">4.5 Estrellas</span>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 
@@ -425,40 +452,53 @@
 
 
 <!-- CONTACT FORM: Formulario de contacto -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Contactános</h2>
-  <p class="p-custom">Estamos acá para ayudarte!</p>
+<section class="section-spacing contacto-seccion text-center">
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Ingresa tu nombre">
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Ingresa tu correo electronico">
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Déjanos tu mensaje..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
-      </form>
+      <div class="form-box p-4">
+        <h2 class="h2-custom">Contactános</h2>
+        <p class="p-custom">Estamos acá para ayudarte!</p>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Déjanos tu mensaje..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
-<!-- /CONTACT FORM -->
+
+
 
 <!-- FOOTER: Pie de página -->
 <footer class="footer">
   <div class="footer-top">
-    <div class="footer-logo">
-      <img src="Imagen/logo.png" alt="Peque Plan" />
+    <!-- Columna izquierda: logo + íconos -->
+    <div class="footer-col footer-logo-col">
+      <div class="footer-logo">
+        <img src="Imagen/logo.png" alt="Peque Plan" />
+        <div class="social-icons-logo">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
     </div>
-    <div class="footer-newsletter">
+
+    <!-- Columna derecha: newsletter -->
+    <div class="footer-col footer-newsletter">
       <h3>Suscribite a nuestro Newsletter</h3>
       <p>Enterate primero de todas nuestras novedades</p>
       <form class="newsletter-form">
-        <input type="email" placeholder="Ingresa tu correo electronico" required />
-        <button type="submit">→</button>
+        <input type="email" placeholder="Ingresa tu correo electrónico" required />
+        <button type="submit">></button>
       </form>
     </div>
   </div>
@@ -467,441 +507,17 @@
 
   <div class="footer-bottom">
     <div class="social-icons">
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    
     </div>
     <p>© 2025 Pequeplan. Todos los derechos reservados</p>
   </div>
 </footer>
 
+
+
 <!-- /FOOTER -->
 
 
-<!-- SERVICES: Servicios o funcionalidades -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Servicios o Características</h2>
-  <p class="mb-5">Lista de servicios o aspectos que se quieren destacar.</p>
-  <div class="row">
-    <!-- Cada columna es una tarjeta de servicio -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4">
-        <img src="https://imageplaceholder.net/100x100" class="mb-3" alt="Servicio">
-        <h5>Servicio 1</h5>
-        <p class="p-custom">Breve explicación del servicio.</p>
-      </div>
-    </div>
-    <!-- Cada columna es una tarjeta de servicio -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4">
-        <img src="https://imageplaceholder.net/100x100" class="mb-3" alt="Servicio">
-        <h5>Servicio 1</h5>
-        <p class="p-custom">Breve explicación del servicio.</p>
-      </div>
-    </div>
-    <!-- Cada columna es una tarjeta de servicio -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4">
-        <img src="https://imageplaceholder.net/100x100" class="mb-3" alt="Servicio">
-        <h5>Servicio 1</h5>
-        <p class="p-custom">Breve explicación del servicio.</p>
-      </div>
-    </div>
-    <!-- ... repetir estructura para más servicios ... -->
-  </div>
-</section>
-<!-- /SERVICES -->
-
-<!-- SECCIÓN A: Texto centrado sin imagen -->
-<section class="section-spacing container text-center">
-  <h2 class="display-5" class="h2-custom">Título destacado</h2>
-  <p class="lead-custom">Un texto breve para explicar o presentar algo importante.</p>
-  <div class="mt-4 d-flex justify-content-center gap-3">
-    <a href="#" class="btn btn-primary">Acción principal</a>
-    <a href="#" class="btn btn-outline-primary">Acción secundaria</a>
-  </div>
-</section>
-
-<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="https://imageplaceholder.net/500x400" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-    </div>
-    <!-- Columna de texto -->
-    <div class="col-lg-6">
-      <h2 class="display-5" class="h2-custom">Título con imagen</h2>
-      <p class="lead-custom">Descripción breve que acompaña y refuerza la propuesta.</p>
-      <a href="#" class="btn btn-primary mt-3">Saber más</a>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- SECCIÓN D: Dos columnas iguales con texto e imagen -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Imagen a la izquierda -->
-    <div class="col-md-6 text-center mb-4 mb-md-0">
-      <img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded" alt="Imagen">
-    </div>
-    <!-- Texto a la derecha -->
-    <div class="col-md-6 text-center text-md-start">
-      <h3 class="display-6" class="h3-custom">Título flexible</h3>
-      <p class="lead-custom">Podés usar este bloque para presentar información destacada acompañada de una imagen.</p>
-      <a href="#" class="btn btn-primary">Explorar</a>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN E: Beneficios con íconos centrados (Bootstrap Icons) -->
-<section class="section-spacing container text-center py-5">
-  <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">Alto rendimiento, tecnología avanzada</h2>
-  <div class="row">
-    <!-- Beneficio 1 -->
-    <div class="col-md-4 mb-4">
-      <i class="bi bi-cpu-fill fs-1 mb-3 text-primary"></i>
-      <h5>Electrónica mejorada</h5>
-      <p class="p-custom">Nuestras baterías están diseñadas para durar más y brindar mayor eficiencia energética.</p>
-    </div>
-    <!-- Beneficio 2 -->
-    <div class="col-md-4 mb-4">
-      <i class="bi bi-person-check-fill fs-1 mb-3 text-primary"></i>
-      <h5>Diseño ergonómico</h5>
-      <p class="p-custom">Mayor comodidad en el uso prolongado sin comprometer el rendimiento.</p>
-    </div>
-    <!-- Beneficio 3 -->
-    <div class="col-md-4 mb-4">
-      <i class="bi bi-gear-fill fs-1 mb-3 text-primary"></i>
-      <h5>Motor optimizado</h5>
-      <p class="p-custom">Más potencia y velocidad para trabajar con eficiencia como nunca antes.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN F: Beneficios sobre fondo de color con íconos de Bootstrap -->
-<section class="section-spacing text-center py-5">
-  <div class="container">
-    <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">Beneficios del producto</h2>
-    <div class="row">
-      <!-- Ítem 1 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-speedometer2 fs-1 mb-3 text-dark"></i>
-        <h5>Velocidad</h5>
-        <p class="p-custom">Procesos más rápidos y eficientes gracias a nuestra tecnología.</p>
-      </div>
-      <!-- Ítem 2 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-battery-full fs-1 mb-3 text-dark"></i>
-        <h5>Durabilidad</h5>
-        <p class="p-custom">Componentes diseñados para resistir y durar en el tiempo.</p>
-      </div>
-      <!-- Ítem 3 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-tools fs-1 mb-3 text-dark"></i>
-        <h5>Mantenimiento simple</h5>
-        <p class="p-custom">Fácil de usar y mantener, ideal para cualquier usuario.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN G: Beneficios destacados en cards con íconos de Bootstrap -->
-<section class="section-spacing container text-center py-5">
-  <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">¿Por qué elegirnos?</h2>
-  <div class="row">
-    <!-- Card 1 -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4 shadow-sm">
-        <i class="bi bi-truck fs-1 mb-3 text-primary"></i>
-        <h5>Entrega rápida</h5>
-        <p class="p-custom">Recibí tu producto en tiempo récord con envíos ágiles y seguros.</p>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4 shadow-sm">
-        <i class="bi bi-headset fs-1 mb-3 text-primary"></i>
-        <h5>Atención personalizada</h5>
-        <p class="p-custom">Te acompañamos en todo el proceso con soporte real y humano.</p>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4 shadow-sm">
-        <i class="bi bi-shield-lock fs-1 mb-3 text-primary"></i>
-        <h5>Seguridad garantizada</h5>
-        <p class="p-custom">Tu información y tu compra protegidas en cada paso.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- TESTIMONIALS: Opiniones de clientes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Testimonios</h2>
-  <p class="p-custom">Comentarios reales de usuarios para generar confianza.</p>
-  <div class="row">
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
-    </div>
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
-    </div>
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
-    </div>
-  </div>
-</section>
-<!-- /TESTIMONIALS -->
-
-<!-- GALERÍA A: Grid clásico de 3 columnas -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería de imágenes</h2>
-  <p class="mb-5">Una estructura simple para mostrar imágenes de manera ordenada.</p>
-  <div class="row g-4">
-    <div class="col-md-4"><img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded rounded" alt="Imagen 1"></div>
-    <div class="col-md-4"><img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded rounded" alt="Imagen 2"></div>
-    <div class="col-md-4"><img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded rounded" alt="Imagen 3"></div>
-  </div>
-</section>
-
-<!-- GALERÍA B: Masonry layout con column-count (hay controles en el css)-->
-<section class="section-spacing container py-5">
-  <h2 class="text-center mb-5 text-uppercase fw-bold" class="h2-custom">Galería tipo Masonry</h2>
-  
-  <div class="masonry__container">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x300" alt="Imagen 1">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x600" alt="Imagen 2">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x350" alt="Imagen 3">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x500" alt="Imagen 4">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x250" alt="Imagen 5">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x450" alt="Imagen 6">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x400" alt="Imagen 7">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x550" alt="Imagen 8">
-  </div>
-</section>
-
-<!-- GALERÍA C: Carrusel horizontal con tarjetas -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería deslizante</h2>
-  <div id="carouselGaleriaC" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="d-flex justify-content-center gap-3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 1">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 2">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 4">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 5">
-        </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center gap-3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 6">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 7">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 8">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 9">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 10">
-        </div>
-      </div>
-    </div>
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
-
-
-<!-- GALERÍA D: Carrusel con imagen + texto encima -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería con textos</h2>
-  <div id="carouselGaleriaD" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="position-relative">
-          <img src="https://imageplaceholder.net/800x400" class="img-fluid img-rounded w-100 rounded" alt="Imagen 1">
-          <div class="position-absolute top-0 start-0 p-4 bg-dark bg-opacity-50 text-white w-100 h-100 d-flex align-items-center justify-content-start text-start">
-            <div>
-              <h4 class="fw-bold" class="h4-custom">Título 1</h4>
-              <p class="lead-custom">Descripción breve sobre esta imagen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="position-relative">
-          <img src="https://imageplaceholder.net/800x400" class="img-fluid img-rounded w-100 rounded" alt="Imagen 2">
-          <div class="position-absolute top-0 start-0 p-4 bg-dark bg-opacity-50 text-white w-100 h-100 d-flex align-items-center justify-content-start text-start">
-            <div>
-              <h4 class="fw-bold" class="h4-custom">Título 2</h4>
-              <p class="lead-custom">Otra descripción diferente para esta imagen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaD" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaD" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
-
-
-<!-- GALERÍA E: Cards tipo "story" con imagen y texto -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería de historias</h2>
-  <div class="row g-4">
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
-      </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
-      </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
-      </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
-      </div>
-    </div>
-    <!-- repetir para más -->
-  </div>
-</section>
-
-<!-- CTA: Llamado a la acción final -->
-<section class="section-spacing container text-center my-5">
-  <h2 class="h2-custom">¿Listo para empezar?</h2>
-  <p class="p-custom">Texto para motivar acción.</p>
-  <a href="#" class="btn btn-dark mt-4">Comenzá Ahora</a>
-</section>
-<!-- /CTA -->
-
-<!-- PRICING: Tabla de precios o planes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Planes o Precios</h2>
-  <p class="p-custom">Comparación de planes.</p>
-  <div class="row mt-5">
-    <!-- Cada columna es un plan -->
-    <div class="col-md-4">
-      <div class="card p-4 h-100">
-        <h5>Plan Básico</h5>
-        <p class="display-6">$100</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio básico 1</li>
-          <li>✔ Servicio básico 2</li>
-        </ul>
-        <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
-      </div>
-    </div>
-    <!-- Cada columna es un plan -->
-    <div class="col-md-4">
-      <div class="card p-4 h-100">
-        <h5>Plan Básico</h5>
-        <p class="display-6">$100</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio básico 1</li>
-          <li>✔ Servicio básico 2</li>
-        </ul>
-        <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
-      </div>
-    </div>
-    <!-- Cada columna es un plan -->
-    <div class="col-md-4">
-      <div class="card p-4 h-100">
-        <h5>Plan Básico</h5>
-        <p class="display-6">$100</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio básico 1</li>
-          <li>✔ Servicio básico 2</li>
-        </ul>
-        <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /PRICING -->
-
-
-<!-- FAQS: Preguntas frecuentes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Preguntas Frecuentes</h2>
-  <p class="p-custom">Respuestas a dudas comunes.</p>
-  <div class="accordion mt-5" id="faqAccordion">
-    <!-- Ítem de pregunta -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-          ¿Qué incluye el servicio?
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show">
-        <div class="accordion-body">
-          Explicación detallada.
-        </div>
-      </div>
-    </div>
-    <!-- Ítem de pregunta -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-          ¿Qué incluye el servicio?
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse show">
-        <div class="accordion-body">
-          Explicación detallada.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- /FAQS -->
 
 

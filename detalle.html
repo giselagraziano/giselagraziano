@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Visible - Belluccia 3</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+
+
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+   <a class="navbar-brand" href="#">
+  <img src="Imagen/logo.png" alt="Logo de MiWeb" style="height: 60px;">
+</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Quienes somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Nuestros Kits</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pequeswap</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Testimonios</a></li>
+        <a href="#suscribite" class="btn btn-primary btn-suscribite">Suscribite</a>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<section class="hero-section container-fluid">
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+
+      <!-- Texto principal -->
+      <div class="col-lg-6">
+        <h1 class="h1-custom">
+ PLAN JARDINERITOS
+</h1>
+
+      <p class="p-custom">
+  Los peques aprenden a sembrar, cuidar y ver crecer sus plantas.
+</p>
+<p class="precio-grande">$25.000 ARS / mes</p>
+
+        <div class="text-center mt-4">
+     <a href="#" class="btn btn-hero">Suscribite</a>
+
+
+        </div>
+      </div>
+      <!-- Imagen destacada -->
+      <div class="col-lg-6 d-flex align-items-center justify-content-center">
+  <img src="Imagen/herodetalle.png" class="img-fluid img-rounded hero-image" alt="Imagen Hero">
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- /HERO -->
+
+<!-- ABOUT: Sección sobre nosotros -->
+<!-- TEAM: Presentación del equipo -->
+<section class="section-spacing container kits-section text-center">
+  <div class="header-section mb-4">
+    <h2 class="h2-custom">¡CADA KIT ES DISTINTO!</h2>
+    <p class="p-custom">Algunas cosas que podes encontrar en tu kit</p>
+  </div>
+
+  <div class="row">
+    <!-- Miembro 1 -->
+    <div class="col-md-4 mb-4">
+      <img src="Imagen/pala.png" class="mb-3 img-fluid img-experto" alt="Herramientas">
+      <h5>HERRAMIENTAS</h5>
+      <p class="p-custom">Seguras y fáciles de usar.</p>
+    </div>
+
+    <!-- Miembro 2 -->
+    <div class="col-md-4 mb-4">
+      <img src="Imagen/guantes.png" class="mb-3 img-fluid img-experto" alt="Guantes">
+      <h5>GUANTES</h5>
+      <p class="p-custom">Protección para jugar sin ensuciarse.</p>
+    </div>
+
+    <!-- Miembro 3 -->
+    <div class="col-md-4 mb-4">
+      <img src="Imagen/maceta.png" class="mb-3 img-fluid img-experto" alt="Maceta">
+      <h5>MACETA</h5>
+      <p class="p-custom">Ideal para sembrar y cuidar.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- /TEAM -->
+<!-- SECCIÓN C: Texto izquierda, imagen derecha -->
+<section class="quienes-somos-detalle section-spacing text-white text-center d-flex align-items-center">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <!-- Texto -->
+      <div class="col-lg-6">
+        <p class="lead-custom texto-limitado">
+          Tutorial jardinería
+        </p>
+        <h2 class="h2-custom">KIT MINI HUERTA</h2>
+        <br>
+        <p class="lead-custom texto-limitado">
+          Te mostramos paso a paso cómo sembrar tus primeras semillas con los materiales del kit. Una actividad simple, segura y súper divertida para compartir en familia.
+        </p>
+      </div>
+
+      <!-- Video -->
+      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+        <div class="video-wrapper" style="
+          position: relative; 
+          padding-bottom: 56.25%; 
+          height: 0; 
+          overflow: hidden; 
+          max-width: 100%;
+          background: white; 
+          border-radius: 15px; 
+          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        ">
+          <iframe 
+            src="https://www.youtube.com/embed/B4D06XXpXwY?rel=0&autoplay=1&mute=1&loop=1&playlist=B4D06XXpXwY&start=60" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen
+            style="position: absolute; top:0; left:0; width:100%; height:100%; border-radius: 15px;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-spacing faq-section">
+  <div class="container faq-container">
+    <!-- Mitad izquierda: FAQ -->
+    <div class="faq-content">
+      <h2 class="h2-custom">Preguntas Frecuentes</h2>
+      <p class="p-custom">Respuestas a dudas comunes.</p>
+      <div class="accordion mt-5" id="faqAccordion">
+        <!-- Ítem de pregunta -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             ¿Las semillas brotan siempre?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              La mayoría sí, pero pueden tardar. Regá con constancia y tené paciencia.
+            </div>
+          </div>
+        </div>
+        <!-- Ítem de pregunta -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+             ¿Dónde conviene ubicar la maceta?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              En un lugar con luz natural, sin sol directo intenso.
+            </div>
+          </div>
+        </div>
+        <!-- Ítem de pregunta -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+             ¿Qué hago si me olvido de regarla?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+             Si te olvidás, regala apenas lo recuerdes. La mayoría de las plantas lo toleran si no pasa seguido.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mitad derecha: Imagen -->
+    <div class="faq-image">
+      <img src="Imagen/nena maceta.png" alt="Plantas creciendo">
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- /FAQS -->
+
+
+
+<!-- FOOTER: Pie de página -->
+<footer class="footer">
+  <div class="footer-top">
+    <!-- Columna izquierda: logo + íconos -->
+    <div class="footer-col footer-logo-col">
+      <div class="footer-logo">
+        <img src="Imagen/logo.png" alt="Peque Plan" />
+        <div class="social-icons-logo">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna derecha: newsletter -->
+    <div class="footer-col footer-newsletter">
+      <h3>Suscribite a nuestro Newsletter</h3>
+      <p>Enterate primero de todas nuestras novedades</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Ingresa tu correo electrónico" required />
+        <button type="submit">></button>
+      </form>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="footer-bottom">
+    <div class="social-icons">
+    
+    </div>
+    <p>© 2025 Pequeplan. Todos los derechos reservados</p>
+  </div>
+</footer>
+
+
+
+<!-- /FOOTER -->
+
+
+<!-- /FAQS -->
+
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+
+
+
+
+</body>
+</html>
