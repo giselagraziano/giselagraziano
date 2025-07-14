@@ -1,6 +1,6 @@
 /* 1. VARIABLES DE DISEÑO */
 :root {
-  --primary-color: #47b2e4;
+  --primary-color: #6c757d;
   --secondary-color: #6c757d;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
@@ -19,9 +19,8 @@ body {
 
 h1, h2 {
   font-family: 'Baloo Bhai 2', cursive;
-  font-weight: 700; /* o 600 si querés un poco menos grueso */
+  font-weight: 700;
 }
-
 
 /* 3. NAVBAR */
 .navbar {
@@ -50,17 +49,56 @@ h1, h2 {
 
 .nav-link:hover {
   color: #486079;
- 
 }
 
 .btn-suscribite {
   margin-left: 30px;
 }
 
+/* BOTONES UNIFICADOS */
+.btn,
+.btn-primary,
+.btn-hero,
+.btn-swap,
+form button.btn-primary,
+.btn-detalle {
+  background-color: #486079 !important;
+  color: white !important;
+  border: none !important;
+  outline: none !important;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-hero:hover,
+.btn-swap:hover,
+form button.btn-primary:hover,
+.btn-detalle:hover {
+  background-color: #95ADC7 !important;
+  color: white !important;
+}
+
+.btn:active,
+.btn-primary:active,
+.btn-hero:active,
+.btn-swap:active,
+form button.btn-primary:active,
+.btn-detalle:active {
+  background-color: #95ADC7 !important;
+  color: white !important;
+}
+
+/* ✅ A partir de acá todo sigue como ya lo tenías */
+
 /* 4. HERO */
 
 .hero-section {
-  background-image: url('Imagen/fondo\ celeste.png');
+  background-image: url('Imagen/fondo\ celeste.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,18 +127,20 @@ h1, h2 {
 }
 
 .hero-image {
-  width: 100%;
-  max-height: 90vh;
-  height: 100vh;
-  object-fit: cover;
-  display: block;
+  width: 100%;      /* que ocupe todo el ancho posible */
+  max-width: none;  /* que no limite el tamaño máximo */
+  height: auto;     /* para mantener proporción */
+  max-height: 90vh; /* opcional: que no exceda 90% de la altura visible */
+  object-fit: contain; /* para que mantenga proporción sin recortar */
 }
+
 
 
 
 .hero-section .container,
 .hero-section .row {
-  height: 100%;
+  min-height: 80vh; 
+  
 }
 
 .row.p-5 {
@@ -221,7 +261,7 @@ section h2::after {
 }
 
 .fondo-cards {
-  background-image: url('Imagen/fondo celeste 2.png');
+  background-image: url('Imagen/fondo\ celeste\ 2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -570,6 +610,78 @@ img.rounded-circle {
 }
 
 /* 11. GALERÍA */
+.galeria-historias {
+  background-image: url('Imagen/trama.png'); /* Cambiá por el nombre real de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  padding-left: 40px; /* Espacio en el lado izquierdo */
+  padding-right: 40px; /* Espacio en el lado derecho */
+}
+
+.galeria-historias .card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #486079; /* Color de fondo de la card */
+}
+
+.galeria-historias .card-body {
+  padding: 15px;
+  font-size: 0.95rem;
+  color: white !important; /* Hacemos que el texto dentro del body sea blanco */
+}
+
+/* Aplicamos color blanco a los textos dentro de card */
+.galeria-historias .card-body h5,
+.galeria-historias .card-body p,
+.galeria-historias .card-body .card-text {
+  color: white !important; /* Aseguramos que todos los textos sean blancos */
+}
+
+.galeria-historias .card:hover {
+  transform: translateY(-5px);
+}
+
+.galeria-historias .card-img-top {
+  width: 100%;
+  height: 180px; /* altura fija para imágenes */
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-galeria-detalle {
+  padding: 0;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  background-color: #486079; /* Color de fondo de la card detalle */
+}
+
+/* Aseguramos que la imagen dentro de card detalle no altere el estilo */
+.card-galeria-detalle .card-img-top {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+
+
+
+
+
 
 
 /* ============================== */
@@ -1059,6 +1171,7 @@ font-family: 'Baloo Bhai 2', cursive;
   font-size: 50px;
   color: #95ADC7;
   margin-bottom: 0;
+  text-align: left; 
 }
 
 /* Línea divisoria */
@@ -1152,38 +1265,38 @@ font-family: 'Baloo Bhai 2', cursive;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* pagina detalle */
-.precio-grande {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #fdfdfd; /* o el color que quieras */
-  display: block; /* para que quede en línea aparte */
-  margin-top: 10px;
-}
-
 .quienes-somos-detalle {
-  background-image: url('Imagen/fondo\ rosa.png'); /* ← Cambiá esto por tu imagen */
+  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  z-index: 0;
+  z-index: 2; /* Aumentamos el z-index para asegurar que el contenido esté arriba */
+  color: white !important;
 }
 
 .quienes-somos-detalle::before {
   content: "";
   position: absolute;
   inset: 0;
+  
   z-index: 1;
 }
 
 .quienes-somos-detalle .container {
   position: relative;
-  z-index: 2;
+  z-index: 3; /* Aseguramos que el contenedor esté encima */
 }
+
 
 /* --- FAQ SECTION --- */
 .faq-section {
+  background-image: url('Imagen/trama.png'); /* cambiá el nombre por tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
   margin: 40px 0; /* margen arriba y abajo */
   min-height: 300px; /* opcional */
 }
@@ -1217,8 +1330,14 @@ font-family: 'Baloo Bhai 2', cursive;
 }
 
 .kits-section {
-  margin: 40px 0;
+  background-image: url('Imagen/trama.png'); /* Cambiá esto por el nombre real de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
 }
+
 
 .kits-section .container {
   max-width: 900px;
@@ -1247,3 +1366,33 @@ font-family: 'Baloo Bhai 2', cursive;
   margin-bottom: 15px;
 }
 
+
+.hero-detalle {
+  background-image: url('Imagen/detallefondo.jpg'); /* ← poné la que quieras */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 🔵 Estilos personalizados para acordeón FAQ con azul de marca */
+
+.accordion-button {
+  background-color: #486079;   /* Azul principal */
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Cuando la pregunta está expandida (activa) */
+.accordion-button:not(.collapsed) {
+  background-color: #95ADC7;   /* Azul claro al abrir */
+  color: white;
+}
+
+/* Saca el borde feo de foco al hacer clic */
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
